@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@font-face {
+  font-family: 'font1';
+  src: url('/fonts/Charm-Bold.ttf') format('truetype');
+       
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'font3';
+  src: url('/fonts/FontdinerSwanky-Regular.ttf') format('truetype');
+       
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'font2';
+  src: url('/fonts/HennyPenny-Regular.ttf') format('truetype');
+       
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+@media (min-width: 100px) {
+  .app-container {
+ 
+  
+    margin-left: auto;
+    margin-right: auto;
+ 
+  }
+
+  html {
+  font-size: 5px; /* par défaut */
+  }
+}
+
+
+
+@media (min-width: 200px) {
+  
+  html {
+  font-size: 10px; /* par défaut */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@layer components {
+
+  .pad{
+    @apply p-1
+  }
+  .font1{
+    font-family: font1;
+  }
+
+   .font2{
+    font-family: font2;
+  }
+
+   .font3{
+    font-family: font3;
+  }
+
+
+
+
+
+
+
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+   .underline-custom {
+    height: 30px;
+  border-bottom: 2px solid #374151;
+  border-bottom-color: green;
+    
+  }
+
+
+}
