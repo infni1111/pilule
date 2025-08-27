@@ -1,14 +1,24 @@
 'use client'
 import { useEffect, useState } from "react";
 
+
+const exemple = {
+  infni:"aomine"
+}
+console.log("exemple : ",exemple)
+
 export default function Microphone() {
-  const [stream, setStream] = useState(null);
+  
+  const [stream, setStream] = useState<MediaStream | null>(null);
+
 
   useEffect(() => {
     async function getMicrophone() {
       try {
         // Demander la permission et obtenir le flux audio
         const userStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+
+
         setStream(userStream);
         console.log("Micro activé !", userStream);
       } catch (err) {
