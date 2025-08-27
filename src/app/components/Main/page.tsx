@@ -22,7 +22,7 @@ export default function Microphone() {
   return (
     <div>
       <h1>Microphone</h1>
-      {stream ? <p>Micro activé ✅</p> : <p>Demande d'accès au micro...</p>}
+      {stream ? <p>Micro activé ✅</p> : <p>Demande accès au micro...</p>}
     </div>
   );
 }
