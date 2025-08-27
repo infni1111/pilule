@@ -14,12 +14,9 @@ export default function Home() {
   }
 
 
-  const hauteurVisible = window.innerHeight;
-
-
   return (
 
-    <div className ="app-container w-[100vw] " style={{ height: `${hauteurVisible}px` }}>
+    <div className ="app-container h-[100vh] w-[100vw] ">
 
       <Main />
      
